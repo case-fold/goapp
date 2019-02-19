@@ -1,5 +1,10 @@
 language: go
 
+# safelist
+branches:
+  only:
+  - try_specify_event_in_yaml
+
 go:
 - master
 
@@ -10,3 +15,4 @@ script: go test -cover -coverprofile=coverage.out
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
+

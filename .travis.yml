@@ -1,9 +1,9 @@
 language: go
 
-# # safelist
-# branches:
-#   only:
-#   - try_specify_event_in_yaml
+# safelist
+branches:
+  only:
+  - try_specify_event_in_yaml
 
 go:
 - master
